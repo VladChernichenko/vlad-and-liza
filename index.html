@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vlad & Liza</title>
+  <title>Vlad &amp; Liza â€” Wedding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;500&display=swap" rel="stylesheet" />
@@ -65,18 +65,18 @@
       background-size: cover;
       opacity: 0.9;
       mask-image: linear-gradient(
-        to top,
-        #000 0%,
-        #000 22%,
-        rgba(0, 0, 0, 0.55) 42%,
-        transparent 72%
+              to top,
+              #000 0%,
+              #000 22%,
+              rgba(0, 0, 0, 0.55) 42%,
+              transparent 72%
       );
       -webkit-mask-image: linear-gradient(
-        to top,
-        #000 0%,
-        #000 22%,
-        rgba(0, 0, 0, 0.55) 42%,
-        transparent 72%
+              to top,
+              #000 0%,
+              #000 22%,
+              rgba(0, 0, 0, 0.55) 42%,
+              transparent 72%
       );
     }
 
@@ -88,10 +88,10 @@
       z-index: 0;
       overflow: hidden;
       background:
-        radial-gradient(ellipse 90% 55% at 15% 10%, rgba(232, 197, 71, 0.18), transparent 52%),
-        radial-gradient(ellipse 70% 50% at 85% 15%, rgba(143, 167, 201, 0.2), transparent 48%),
-        radial-gradient(ellipse 100% 70% at 50% 100%, rgba(90, 122, 98, 0.05), transparent 55%),
-        linear-gradient(180deg, rgba(253, 251, 247, 0.4), transparent 60%);
+              radial-gradient(ellipse 90% 55% at 15% 10%, rgba(232, 197, 71, 0.18), transparent 52%),
+              radial-gradient(ellipse 70% 50% at 85% 15%, rgba(143, 167, 201, 0.2), transparent 48%),
+              radial-gradient(ellipse 100% 70% at 50% 100%, rgba(90, 122, 98, 0.05), transparent 55%),
+              linear-gradient(180deg, rgba(253, 251, 247, 0.4), transparent 60%);
       animation: aurora-shift 22s ease-in-out infinite alternate;
     }
 
@@ -329,8 +329,9 @@
 
     .schedule-what {
       font-size: 1.02rem;
-      color: var(--ink);
+      color: var(--muted);
       font-weight: 400;
+      font-family: var(--font-ui);
     }
 
     section.card.dress-code-section {
@@ -343,8 +344,33 @@
       color: #7a9eb8;
     }
 
-    section.card.dress-code-section > p {
+    section.card.dress-code-section > p,
+    section.card.dress-code-section .dress-block {
       color: rgba(55, 72, 78, 0.62);
+    }
+
+    section.card.dress-code-section .dress-code-sub {
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #7a9eb8;
+      margin: 1.35rem 0 0.45rem;
+    }
+
+    section.card.dress-code-section .dress-code-sub:first-of-type {
+      margin-top: 0.35rem;
+    }
+
+    section.card.dress-code-section .dress-block {
+      margin: 0 0 0.15rem;
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    section.card.dress-code-section .dress-block:last-of-type {
+      margin-bottom: 0;
     }
 
     .dress-code-visual {
@@ -474,224 +500,227 @@
   </style>
 </head>
 <body data-wedding-date="2026-09-04T17:00:00">
-  <div class="flora-bg" aria-hidden="true"></div>
-  <div class="aurora" aria-hidden="true"></div>
-  <div class="petals" id="petals" aria-hidden="true"></div>
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="flora-bg" aria-hidden="true"></div>
+<div class="aurora" aria-hidden="true"></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div class="wrap">
-    <header class="hero">
-      <p class="eyebrow">Together with their friends</p>
-      <h1 class="names">
-        Vlad & Liza
-      </h1>
-      <p class="tagline">Invite you to celebrate their marriage</p>
-      <div class="countdown" id="countdown" aria-live="polite">
-        <div class="unit"><span class="num" id="cd-days">—</span><span class="lbl">Days</span></div>
-        <div class="unit"><span class="num" id="cd-hours">—</span><span class="lbl">Hours</span></div>
-        <div class="unit"><span class="num" id="cd-mins">—</span><span class="lbl">Mins</span></div>
-        <div class="unit"><span class="num" id="cd-secs">—</span><span class="lbl">Secs</span></div>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Together with you</p>
+    <h1 class="names">
+      Vlad & Liza
+    </h1>
+    <p class="tagline">We invite you to celebrate our marriage</p>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="unit"><span class="num" id="cd-days">â€”</span><span class="lbl">Days</span></div>
+      <div class="unit"><span class="num" id="cd-hours">â€”</span><span class="lbl">Hours</span></div>
+      <div class="unit"><span class="num" id="cd-mins">â€”</span><span class="lbl">Mins</span></div>
+      <div class="unit"><span class="num" id="cd-secs">â€”</span><span class="lbl">Secs</span></div>
+    </div>
+  </header>
+
+  <section class="card reveal" id="when">
+    <h2>Ceremony &amp; reception</h2>
+    <p>
+      We would be honored to have you join us for an evening of dinner, dancing, and joy as we begin this new chapter.
+    </p>
+    <div class="detail-row reveal-stagger">
+      <div>
+        <strong>When</strong>
+        <span>Friday, September 4, 2026</span><br />
       </div>
-    </header>
-
-    <section class="card reveal" id="when">
-      <h2>Ceremony &amp; reception</h2>
-      <p>
-        We would be honored to have you join us for an evening of dinner, dancing, and joy as we begin this new chapter.
-      </p>
-      <div class="detail-row reveal-stagger">
-        <div>
-          <strong>When</strong>
-          <span>Friday, September 4, 2026</span><br />
-          <span>Ceremony at 5:00 in the afternoon</span>
-        </div>
-        <div>
-          <strong>Where</strong>
-          <span>Villa Saakadze</span>
-        </div>
+      <div>
+        <strong>Where</strong>
+        <span>Villa Saakadze</span>
       </div>
-      <div class="actions">
-        <a class="btn btn-primary" id="rsvpBtn" href="#">RSVP</a>
-        <a class="btn btn-ghost" href="https://maps.app.goo.gl/Hc9iQ9e4MYyxzpcZ8" target="_blank" rel="noopener">Directions</a>
-      </div>
-    </section>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" id="rsvpBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSec3Fc4robKcrONM6xBYip4eTtXZ7nRWUQoW4Dh0wLg1r6GKw/viewform?usp=preview" target="_blank" rel="noopener noreferrer">RSVP</a>
+      <a class="btn btn-ghost" href="https://maps.app.goo.gl/Hc9iQ9e4MYyxzpcZ8" target="_blank" rel="noopener">Directions</a>
+    </div>
+  </section>
 
-    <section class="card reveal" id="schedule" aria-labelledby="schedule-heading">
-      <h2 id="schedule-heading">Schedule</h2>
-      <ul class="schedule">
-        <li>
-          <time datetime="2026-09-04T17:00">17:00</time>
-          <span class="schedule-what">Ceremony</span>
-        </li>
-        <li>
-          <time datetime="2026-09-04T18:30">18:30</time>
-          <span class="schedule-what">Celebration</span>
-        </li>
-        <li>
-          <time datetime="2026-09-04T19:30">19:30</time>
-          <span class="schedule-what">Cake</span>
-        </li>
-      </ul>
-    </section>
+  <section class="card reveal" id="schedule" aria-labelledby="schedule-heading">
+    <h2 id="schedule-heading">Schedule</h2>
+    <ul class="schedule">
+      <li>
+        <time datetime="2026-09-04T17:00">17:30</time>
+        <span class="schedule-what">Welcome</span>
+      </li>
+      <li>
+        <time datetime="2026-09-04T18:30">18:30</time>
+        <span class="schedule-what">We say "I do"</span>
+      </li>
+      <li>
+        <time datetime="2026-09-04T19:30">19:00</time>
+        <span class="schedule-what">Dinner & Dancing</span>
+      </li>
+      <li>
+        <time datetime="2026-09-04T19:30">22:00</time>
+        <span class="schedule-what">Something sweet</span>
+      </li>
+    </ul>
+  </section>
 
-    <section class="card reveal dress-code-section" aria-labelledby="dress-heading">
-      <h2 id="dress-heading">Dress code</h2>
-      <p>Garden-party attire in airy pastels and meadow tones feels right at home among the fields. The illustration below includes a soft violet dress as one lovely option. A light layer is lovely as the sun dips low.</p>
-      <figure class="dress-code-visual">
-        <img
-          src="images/dress-code.jpg"
-          width="1000"
-          height="666"
-          loading="lazy"
-          decoding="async"
-          alt="Dress code watercolor guide: powder blue, peach, cream, sage, and butter yellow palette, with one woman in a soft violet dress as an outfit example."
-        />
-      </figure>
-    </section>
+  <section class="card reveal dress-code-section" aria-labelledby="dress-heading">
+    <h2 id="dress-heading">Dress code</h2>
+    <h3 class="dress-code-sub">For women</h3>
+    <p class="dress-block">
+      Midi or maxi length dresses, skirts or trouser suits are preferred. Opt for soft pastel colours, satin fabrics, floral prints and textured details. Please avoid white, black and red.
+    </p>
+    <h3 class="dress-code-sub">For men</h3>
+    <p class="dress-block">
+      Suits are recommended. Light colours (beige, light grey or blue) and linen are preferred. A black suit is permitted.
+    </p>
+    <figure class="dress-code-visual">
+      <img
+              src="images/dress-code.jpg"
+              width="1000"
+              height="666"
+              loading="lazy"
+              decoding="async"
+              alt="Dress code watercolor guide: powder blue, peach, cream, sage, and butter yellow palette, with one woman in a soft violet dress as an outfit example."
+      />
+    </figure>
+  </section>
 
-    <section class="card reveal">
-      <h2>Gifts</h2>
-      <p>Your presence is our greatest gift. Should you wish to honor us further, a small contribution toward our honeymoon would be warmly appreciated.</p>
-    </section>
+  <section class="card reveal">
+    <h2>Gifts</h2>
+    <p>Your presence is our greatest gift. Should you wish to honor us further, a small contribution toward our honeymoon would be warmly appreciated.</p>
+  </section>
 
-    <footer class="reveal">With love — V &amp; L</footer>
-  </div>
+  <footer class="reveal">With love â€” V &amp; L</footer>
+</div>
 
-  <script>
-    (function () {
-      var body = document.body;
-      var weddingIso = body.getAttribute("data-wedding-date");
-      var wedding = weddingIso ? new Date(weddingIso) : null;
+<script>
+  (function () {
+    var body = document.body;
+    var weddingIso = body.getAttribute("data-wedding-date");
+    var wedding = weddingIso ? new Date(weddingIso) : null;
 
-      /* Countdown */
-      var elDays = document.getElementById("cd-days");
-      var elHours = document.getElementById("cd-hours");
-      var elMins = document.getElementById("cd-mins");
-      var elSecs = document.getElementById("cd-secs");
+    /* Countdown */
+    var elDays = document.getElementById("cd-days");
+    var elHours = document.getElementById("cd-hours");
+    var elMins = document.getElementById("cd-mins");
+    var elSecs = document.getElementById("cd-secs");
 
-      function pad(n) {
-        return n < 10 ? "0" + n : String(n);
+    function pad(n) {
+      return n < 10 ? "0" + n : String(n);
+    }
+
+    function tick() {
+      if (!wedding || isNaN(wedding.getTime())) return;
+      var now = new Date();
+      var diff = wedding.getTime() - now.getTime();
+      if (diff <= 0) {
+        elDays.textContent = "0";
+        elHours.textContent = "0";
+        elMins.textContent = "0";
+        elSecs.textContent = "0";
+        return;
       }
+      var s = Math.floor(diff / 1000);
+      var days = Math.floor(s / 86400);
+      s -= days * 86400;
+      var hours = Math.floor(s / 3600);
+      s -= hours * 3600;
+      var mins = Math.floor(s / 60);
+      var secs = s - mins * 60;
+      elDays.textContent = String(days);
+      elHours.textContent = pad(hours);
+      elMins.textContent = pad(mins);
+      elSecs.textContent = pad(secs);
+    }
 
-      function tick() {
-        if (!wedding || isNaN(wedding.getTime())) return;
-        var now = new Date();
-        var diff = wedding.getTime() - now.getTime();
-        if (diff <= 0) {
-          elDays.textContent = "0";
-          elHours.textContent = "0";
-          elMins.textContent = "0";
-          elSecs.textContent = "0";
-          return;
+    tick();
+    setInterval(tick, 1000);
+
+    /* Floating petals */
+    var petalRoot = document.getElementById("petals");
+    var petalGradients = [
+      "linear-gradient(135deg,#fefefe 0%,#f2e4a9 100%)",
+      "linear-gradient(135deg,#e8c547 0%,#f8efc4 100%)",
+      "linear-gradient(135deg,#a8bdd9 0%,#eef3fa 100%)",
+      "linear-gradient(135deg,#d4c4e0 0%,#faf7ff 100%)",
+      "linear-gradient(135deg,#e8a090 0%,#fce8e2 100%)",
+      "linear-gradient(135deg,#dff0e4 0%,#ffffff 100%)",
+    ];
+    var petalCount = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 24;
+    for (var i = 0; i < petalCount; i++) {
+      var p = document.createElement("div");
+      p.className = "petal";
+      var w = 5 + Math.random() * 11;
+      var round = Math.random() < 0.38;
+      p.style.left = Math.random() * 100 + "%";
+      p.style.animationDuration = 11 + Math.random() * 16 + "s";
+      p.style.animationDelay = Math.random() * 10 + "s";
+      p.style.width = w + "px";
+      p.style.height = (round ? w * 0.95 : w * 1.35) + "px";
+      p.style.borderRadius = round ? "50%" : "50% 50% 50% 0";
+      p.style.background = petalGradients[Math.floor(Math.random() * petalGradients.length)];
+      p.style.opacity = String(0.35 + Math.random() * 0.35);
+      petalRoot.appendChild(p);
+    }
+
+    /* Scroll reveal */
+    var revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(
+              function (entries) {
+                entries.forEach(function (entry) {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                  }
+                });
+              },
+              { root: null, threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+      revealEls.forEach(function (el) {
+        io.observe(el);
+      });
+    } else {
+      revealEls.forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+    }
+
+    /* Soft cursor glow â€” skip touch devices */
+    var glow = document.getElementById("cursorGlow");
+    var finePointer = window.matchMedia("(pointer: fine)").matches;
+    if (finePointer && glow) {
+      var gx = 0;
+      var gy = 0;
+      var tx = 0;
+      var ty = 0;
+      var pending = false;
+      function smooth() {
+        gx += (tx - gx) * 0.12;
+        gy += (ty - gy) * 0.12;
+        glow.style.left = gx + "px";
+        glow.style.top = gy + "px";
+        if (Math.abs(tx - gx) > 0.8 || Math.abs(ty - gy) > 0.8) {
+          requestAnimationFrame(smooth);
+        } else {
+          pending = false;
         }
-        var s = Math.floor(diff / 1000);
-        var days = Math.floor(s / 86400);
-        s -= days * 86400;
-        var hours = Math.floor(s / 3600);
-        s -= hours * 3600;
-        var mins = Math.floor(s / 60);
-        var secs = s - mins * 60;
-        elDays.textContent = String(days);
-        elHours.textContent = pad(hours);
-        elMins.textContent = pad(mins);
-        elSecs.textContent = pad(secs);
       }
-
-      tick();
-      setInterval(tick, 1000);
-
-      /* RSVP mailto — edit email */
-      var rsvpEmail = "hello@example.com";
-      var rsvp = document.getElementById("rsvpBtn");
-      var subject = encodeURIComponent("Wedding RSVP — Vlad & Liza");
-      var bodyText = encodeURIComponent("Dear Vlad and Liza,\n\nWe are delighted to respond:\n\nNames attending:\nDietary notes:\n\nWith love");
-      rsvp.href = "mailto:" + rsvpEmail + "?subject=" + subject + "&body=" + bodyText;
-
-      /* Floating petals */
-      var petalRoot = document.getElementById("petals");
-      var petalGradients = [
-        "linear-gradient(135deg,#fefefe 0%,#f2e4a9 100%)",
-        "linear-gradient(135deg,#e8c547 0%,#f8efc4 100%)",
-        "linear-gradient(135deg,#a8bdd9 0%,#eef3fa 100%)",
-        "linear-gradient(135deg,#d4c4e0 0%,#faf7ff 100%)",
-        "linear-gradient(135deg,#e8a090 0%,#fce8e2 100%)",
-        "linear-gradient(135deg,#dff0e4 0%,#ffffff 100%)",
-      ];
-      var petalCount = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 24;
-      for (var i = 0; i < petalCount; i++) {
-        var p = document.createElement("div");
-        p.className = "petal";
-        var w = 5 + Math.random() * 11;
-        var round = Math.random() < 0.38;
-        p.style.left = Math.random() * 100 + "%";
-        p.style.animationDuration = 11 + Math.random() * 16 + "s";
-        p.style.animationDelay = Math.random() * 10 + "s";
-        p.style.width = w + "px";
-        p.style.height = (round ? w * 0.95 : w * 1.35) + "px";
-        p.style.borderRadius = round ? "50%" : "50% 50% 50% 0";
-        p.style.background = petalGradients[Math.floor(Math.random() * petalGradients.length)];
-        p.style.opacity = String(0.35 + Math.random() * 0.35);
-        petalRoot.appendChild(p);
-      }
-
-      /* Scroll reveal */
-      var revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
-      if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-              }
-            });
-          },
-          { root: null, threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-        );
-        revealEls.forEach(function (el) {
-          io.observe(el);
-        });
-      } else {
-        revealEls.forEach(function (el) {
-          el.classList.add("is-visible");
-        });
-      }
-
-      /* Soft cursor glow — skip touch devices */
-      var glow = document.getElementById("cursorGlow");
-      var finePointer = window.matchMedia("(pointer: fine)").matches;
-      if (finePointer && glow) {
-        var gx = 0;
-        var gy = 0;
-        var tx = 0;
-        var ty = 0;
-        var pending = false;
-        function smooth() {
-          gx += (tx - gx) * 0.12;
-          gy += (ty - gy) * 0.12;
-          glow.style.left = gx + "px";
-          glow.style.top = gy + "px";
-          if (Math.abs(tx - gx) > 0.8 || Math.abs(ty - gy) > 0.8) {
-            requestAnimationFrame(smooth);
-          } else {
-            pending = false;
-          }
-        }
-        document.addEventListener(
-          "mousemove",
-          function (e) {
-            tx = e.clientX;
-            ty = e.clientY;
-            if (!pending) {
-              pending = true;
-              requestAnimationFrame(smooth);
-            }
-          },
-          { passive: true }
-        );
-      } else if (glow) {
-        glow.style.display = "none";
-      }
-    })();
-  </script>
+      document.addEventListener(
+              "mousemove",
+              function (e) {
+                tx = e.clientX;
+                ty = e.clientY;
+                if (!pending) {
+                  pending = true;
+                  requestAnimationFrame(smooth);
+                }
+              },
+              { passive: true }
+      );
+    } else if (glow) {
+      glow.style.display = "none";
+    }
+  })();
+</script>
 </body>
 </html>
